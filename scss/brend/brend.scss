@@ -1,0 +1,10 @@
+.brend-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+        margin: 10px 0;
+        opacity: .8;
+    }
+}

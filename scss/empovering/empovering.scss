@@ -1,0 +1,35 @@
+.empovering {
+    background: url(../img/empovering/empovering-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    .container {
+        height: 100%;
+    }
+}
+
+.empovering-wrap {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    @media (max-width: 990px) {
+        padding: 30px 0;
+    }
+    .title-xl {
+        text-align: left;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .title-sm {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #fff;
+        text-align: left;
+        margin: 0;
+    }
+}

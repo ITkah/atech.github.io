@@ -1,0 +1,68 @@
+.map {
+    position: relative;
+    margin-bottom: -10px;
+    @media (max-width: 990px) {
+        margin-bottom: 0;
+    }
+    iframe {
+        height: 600px;
+        @media (max-width: 576px) {
+            height: 400px;
+        }
+    }
+    .title-xl {
+        text-align: left;
+    }
+    .form-feedback {
+        position: absolute;
+        width: 500px;
+        padding: 20px;
+        background: #fff;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        top: 150px;
+        left: 60px;
+        @media (max-width: 990px) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+        input {
+            border: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e1e2;
+            color: #000;
+            font: 300 .9rem 'Heebo', sans-serif;
+        }
+        textarea {
+            border: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e1e2;
+            color: #000;
+            font: 300 .9rem 'Heebo', sans-serif;
+            height: 70px;
+        }
+        button {
+            position: relative;
+            z-index: 99;
+            padding: 10px 20px;
+            color: #1258b4;
+            font: 500 1rem 'Heebo', sans-serif;
+            border: 1.5px solid #0d73fc;
+            transition: .3s;
+            width: 150px;
+            cursor: pointer;
+            background: transparent;
+            @media (max-width: 990px) {
+                width: 100%;
+            }
+            &:hover {
+                color: #fff;
+                background: #1258b4;
+            }
+        }
+    }
+}
