@@ -27,10 +27,10 @@ footer {
     }
 }
 
-.footer-link {
-    color: #fff;
+.footer-link-feedback{
+    color: #82868a;
     display: block;
-    font: 400 1rem 'Heebo', sans-serif;
+    font: 300 1rem 'Heebo', sans-serif;
     transition: .3s;
     opacity: .8;
     margin: 5px 0;
@@ -51,7 +51,7 @@ footer {
     a {
         color: #fff;
         display: block;
-        font: 400 1rem 'Heebo', sans-serif;
+        font: 300 1rem 'Heebo', sans-serif;
         transition: .3s;
         opacity: .8;
         margin: 5px 0;
@@ -71,6 +71,7 @@ footer {
     font: 700 1.125rem 'Heebo', sans-serif;
     margin-bottom: 20px;
     position: relative;
+    margin-top: 20px;
     @media (max-width: 990px) {
         margin-bottom: 20px;
     }

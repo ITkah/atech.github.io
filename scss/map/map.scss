@@ -15,20 +15,27 @@
     }
     .form-feedback {
         position: absolute;
-        width: 500px;
-        padding: 20px;
+        width: 600px;
+        padding: 40px 60px;
         background: #fff;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 15px;
-        top: 150px;
+        top: 130px;
+        box-shadow: 0 3px 15px 2px rgba(0,0,0,.05);
         left: 60px;
         @media (max-width: 990px) {
+            padding: 15px;
             top: 0;
             left: 0;
             width: 100%;
             position: relative;
             box-sizing: border-box;
+        }
+        .box-input {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
         }
         input {
             border: none;
@@ -43,7 +50,8 @@
             border-bottom: 1px solid #e0e1e2;
             color: #000;
             font: 300 .9rem 'Heebo', sans-serif;
-            height: 70px;
+            height: 100px;
+            margin-bottom: 10px;
         }
         button {
             position: relative;
