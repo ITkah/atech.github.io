@@ -55,3 +55,206 @@
         }
     }
 }
+
+
+.about-offer-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+
+.about-offer {
+    position: relative;
+    .bg {
+        position: absolute;
+        display: block;
+        background: #fafafa;
+        height: 500px;
+        width: 500px;
+        left: 0;
+        top: -200px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.about-offer-welcome {
+    background: #0d73fc;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 380px;
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    @media (max-width: 990px) {
+        top: 0;
+        width: auto;
+        height: auto;
+    }
+    .weclome-title {
+        color: #fff;
+        font: 700 2.5rem/50px 'Heebo', sans-serif;
+        @media (max-width: 990px) {
+            font: 700 2.1rem/40px 'Heebo', sans-serif;
+        }
+    }
+    .about-logo-offer {
+        position: absolute;
+        background: #424242;
+        height: 150px;
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -40px;
+        bottom: -40px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+        img {
+            height: 45px;
+        }
+    }
+}
+
+
+.about-offer-box {
+    position: relative;
+    z-index: 2;
+    .title-xl {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+.about-video-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        box-sizing: border-box;
+        background: rgba(102,166,251,.5);
+        z-index: 2;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        position: absolute;
+        z-index: 2;
+    }
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 40%;
+        z-index: 2;
+        color: #fff;
+        font: 600 1rem 'Heebo', sans-serif;
+        @media (max-width: 1100px) {
+            bottom: 37%;
+        }
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .preview {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.about-info-wrap {
+    .about-info-box {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 30px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+    }
+    .title-xl {
+        text-align: left;
+        margin-bottom: 20px;
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.about-info-2{
+    .title-xl {
+        margin-bottom: 30px;
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+        }
+    }
+    .about-info-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-info-box-1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 30px;
+        margin-bottom: 35px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+    .about-info-box-2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 30px;
+        @media (max-width: 990px) {
+           display: flex;
+           flex-direction: column-reverse;
+        }
+        .title-sm {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+}
