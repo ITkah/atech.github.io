@@ -50,14 +50,11 @@
             <div class="bredcrumbs padding margin">
                 <div class="container">
                     <div class="bredcrumbs-container">
-                        <h1 class="bredcrumbs-title">Career</h1>
-                        <div class="bredcrumbs-box">
-                            <a href="#" class="bredcrumbs-link">Home</a>
-                            <span>Career</span>
-                        </div>
+                        <p class="bread-sm">Energy</p>
+                        <h1 class="bredcrumbs-title">About Renergy</h1>
                     </div>
                 </div>
-            </div>  
+            </div> 
             <section class="carrer-main padding margin">
                 <div class="container">
                     <div class="carrer-main-container">
@@ -108,12 +105,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="carrer-second padding">
-                <div class="container">
-                    <a href="#upload" class="carrer-main-container popup-with-form">
-                        <h2 class="title-xl">Резюме</h2>
+                    <a href="#upload" class="carrer-send-modal popup-with-form">
+                        Резюме
                     </a>
                 </div>
             </section>
@@ -150,6 +143,13 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="footer-sub">
+                        <p class="sub-title">
+                           Subscribe
+                        </p>
+                        <input type="email" placeholder="E-mail">
+                        <button type="submit">Send</button>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -161,19 +161,15 @@
             <p class="title-sm">
                 Send CV
             </p>
-            <p class="text-simple">
-                We will contact you
-            </p>
             <div class="input-file-container">
-                <input class="input-file" id="my-file" name="file" type="file" required>
-                <label tabindex="0" for="my-file" class="input-file-trigger">
-                    <img src="img/icon/staple.svg" alt="staple">
-                </label>
-                <p class="label">Allowed Formats<br>
+                <p class="label">Allowed Formats
                     doc, pdf, txt, zip, rtf</p>
-                <p class="file-return"></p>
+                <input class="input-file" id="my-file" name="file" type="file" required>
             </div>
-            <button type="submit" class="send">Send</button>
+            <div class="btn-wrap">
+                <a href="#" class="back">Отмена</a>
+                <button type="submit" class="send">Send</button>
+            </div>
         </form>
     </div>
 
@@ -198,27 +194,6 @@
                 }
             }
         }
-    });
-
-    document.querySelector("html").classList.add('js');
-
-    var fileInput = document.querySelector(".input-file"),
-        button = document.querySelector(".input-file-trigger"),
-        the_return = document.querySelector(".file-return");
-
-    button.addEventListener("keydown", function (event) {
-        if (event.keyCode == 13 || event.keyCode == 32) {
-            fileInput.focus();
-        }
-    });
-
-    button.addEventListener("click", function (event) {
-        fileInput.focus();
-        return false;
-    });
-    
-    fileInput.addEventListener("change", function (event) {
-        the_return.innerHTML = this.value;
     });
     </script>
     <script src="js/common.js"></script>

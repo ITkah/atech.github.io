@@ -74,6 +74,7 @@ footer {
     margin-top: 20px;
     @media (max-width: 990px) {
         margin-bottom: 20px;
+        margin-top: 0;
     }
 }
 
@@ -97,5 +98,51 @@ footer {
             margin: 0 auto;
             display: block;
         }
+    }
+}
+
+
+.footer-sub {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 300px;
+    @media (max-width: 990px) {
+        margin: 0;
+    }
+    @media (max-width: 576px) {
+        max-width: 100%;
+    }
+    input {
+        background: transparent;
+        padding: 8px 0;
+        border: none;
+        color: #fff;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #fff;
+        font: 500 .9rem 'Heebo', sans-serif;
+    }
+    button {
+        position: relative;
+        z-index: 99;
+        padding: 10px 20px;
+        color: #fff;
+        font: 500 1rem 'Heebo', sans-serif;
+        border: none;
+        transition: .3s;
+        width: 100%;
+        cursor: pointer;
+        background: #1258b4;
+        @media (max-width: 576px) {
+            padding: 7px 10px;
+        }
+        &:hover {
+            background: #4d86d1; 
+        }
+    }
+    .sub-title {
+        color: #fff;
+        font: 700 1.125rem 'Heebo', sans-serif;
+        margin-bottom: 10px;
     }
 }
