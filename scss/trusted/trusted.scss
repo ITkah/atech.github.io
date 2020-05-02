@@ -1,0 +1,31 @@
+.trusted {
+    .title-xl {
+        margin-bottom: 5px;
+    }
+    .title-sm {
+        margin-bottom: 25px;
+    }
+    .btn-wrap {
+        a {
+            width: 120px;
+            text-align: center;
+            @media (max-width: 990px) {
+                width: auto;
+            }
+        }
+    }
+}
+
+.trusted-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin-bottom: 45px;
+    .trusted-box {
+        img {
+            display: block;
+            height: 60px;
+            margin: 0 auto;
+        }
+    }
+}

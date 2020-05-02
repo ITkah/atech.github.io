@@ -85,16 +85,16 @@
         margin-bottom: 0;
         top: -25px;
         padding-bottom: 15px;
-        // &::after {
-        //     content: '';
-        //     height: 1px;
-        //     bottom: -5px;
-        //     width: 108%;
-        //     left: -4%;
-        //     display: block;
-        //     position: absolute;
-        //     background: gray;
-        // }
+        &::after {
+            content: '';
+            height: 1px;
+            bottom: -5px;
+            width: 108%;
+            left: -4%;
+            display: block;
+            position: absolute;
+            background: gray;
+        }
         @media (max-width: 990px) {
             top: 0;
             margin-bottom: 15px;

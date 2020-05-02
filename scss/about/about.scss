@@ -277,3 +277,106 @@
         object-fit: cover;
     }
 }
+
+.about-wrap-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    height: 800px;
+    @media (max-width: 990px) {
+        height: auto;
+    }
+    &::before {
+        content: 'About';
+        position: absolute;
+        transform: rotate(270deg);
+        font: 600 10rem 'Heebo', sans-serif;
+        left: -80px;
+        color: #f7f7f7;
+        top: 400px;
+        @media (max-width: 1100px) {
+            left: 0;
+        }
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.bg-about {
+    position: absolute;
+    right: -100px;
+    top: 95px;
+    object-fit: cover;
+    height: 600px;
+    width: 950px;
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.about-min-home {
+    position: relative;
+    padding: 80px 15px;
+    top: 0;
+    position: relative;
+    z-index: 2;
+    background: #0d73fc;
+    width: 400px;
+    margin-right: auto;
+    .title-xl {
+        color: #fff;
+    }
+    @media (max-width: 990px) {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+}
+
+.about-xl-home {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    background: #eff2f5;
+    max-width: 550px;
+    margin-left: auto;
+    img {
+        position: absolute;
+        top: -30px;
+        @media (max-width: 990px) {
+            position: absolute;
+            top: 0;
+        }
+    }
+    @media (max-width: 990px) {
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .title-xl {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .text-simple {
+        text-align: left;
+    }
+    a {
+        color: #0d73fc;
+        position: relative;
+        font: 600 1rem 'Heebo', sans-serif;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 60px;
+            background: #0d73fc;
+            display: block;
+            top: 12px;
+            left: 90px;
+        }
+    }
+}

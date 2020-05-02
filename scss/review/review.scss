@@ -1,5 +1,31 @@
 .review {
     background: #eff2f5;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: '';
+        height: 100%;
+        width: 40px;
+        background: #0d73fc;
+        position: absolute;
+        left: 0;
+        @media (max-width: 1400px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: '';
+        height: 100%;
+        width: 20px;
+        background: #fff;
+        position: absolute;
+        left: 40px;
+        z-index: 2;
+        top: 0;
+        @media (max-width: 1400px) {
+            display: none;
+        }
+    }
 }
 
 .review-wrap {
@@ -9,27 +35,36 @@
         padding-left: 70px;
         position: relative;
         margin-bottom: 30px;
+        margin-left: 55px;
+        @media (max-width: 1280px) {
+            margin-left: 0;
+        }
         @media (max-width: 576px) {
             padding: 0;
             margin-bottom: 15px;
         }
         &::before {
-            content: ',,';
-            color: #fff;
+            content: '';
             background: #0d73fc;
-            padding: 10px;
-            height: 50px;
-            width: 35px;
+            width: 60px;
+            height: 60px;
             padding-top: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             position: absolute;
-            left: 0;
-            font: 500 3.5rem 'Heebo', sans-serif;
+            left: -20px;
             @media (max-width: 576px) {
                 display: none;
             }
+        }
+        &::after {
+            content: '“';
+            color: #fff;
+            font: 500 4.5rem 'Heebo', sans-serif;
+            position: absolute;
+            left: 0;
+            top: 10px;
         }
     }
     .review-slider {
@@ -37,10 +72,10 @@
         margin: 0 auto;
         .text-simple {
             font-size: 1.25rem;
-            color: #000;
+            color: #333;
             font-weight: 500;
-            opacity: .8;
             line-height: 30px;
+            margin-bottom: 25px;
             @media (max-width: 990px) {
                 font-size: .95rem;
                 line-height: 25px;
@@ -50,14 +85,14 @@
             font-size: 1rem;
             color: #000;
             position: relative;
-            padding-left: 40px;
+            padding-left: 50px;
             @media (max-width: 990px) {
                 font-size: .95rem;
             }
             &::before {
                 content: '';
                 height: 2px;
-                width: 30px;
+                width: 40px;
                 display: block;
                 background:#0d73fc;
                 position: absolute;
